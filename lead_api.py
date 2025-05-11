@@ -14,11 +14,12 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For development - restrict this in production
+    allow_origins=["https://your-frontend.vercel.app"],  # Replace with actual domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Load environment variables
 load_dotenv()
