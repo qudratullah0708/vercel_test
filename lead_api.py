@@ -141,8 +141,7 @@ Ensure the output is a valid JSON array of lead objects.
     except json.JSONDecodeError:
         print("Failed to parse JSON from response")
         print(f"Raw response: {response}")
-        # Fall back to generating dummy data if JSON parsing fails
-        return generate_fallback_leads(query, 5)
+
     except Exception as e:
         print(f"Error extracting leads: {str(e)}")
         print(f"Raw response: {response}")
