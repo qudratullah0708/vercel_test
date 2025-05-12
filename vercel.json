@@ -1,18 +1,13 @@
 {
     "builds": [
       {
-        "src": "*.py",
+        "src": "lead_api.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
-        "src": "/api/search",
+        "src": "/(.*)",
         "dest": "lead_api.py"
-      },
-         {
-        "src": "/send-email",
-        "dest": "send-email.py"
       }
     ]
-  }
