@@ -97,7 +97,7 @@ Example Output:
     print("🧠 Extracting leads using Groq...")
 
     completion = groq_client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="meta-llama/llama-4-maverick-17b-128e-instruct",
         messages=[{"role": "user", "content": prompt}]
     )
 
