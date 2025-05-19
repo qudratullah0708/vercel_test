@@ -15,7 +15,7 @@ app = FastAPI()
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://lead-genius-suite.vercel.app", "http://http://localhost:8080"],  # Replace with actual domain
+    allow_origins=["https://lead-genius-suite.vercel.app", "http://localhost:8080"],  # Replace with actual domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
